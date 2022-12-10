@@ -1,0 +1,12 @@
+PROBLEM STATEMENT:
+	
+	Buying a product is a great hustle online as there are many options so people tend to take time by comparing 
+	different products features and prices.Every time you have to open a product to see its description 
+	so it increases the time you send searching for your best option.
+
+
+SOLUTION:
+	
+	So I have worked on this issue to minimise the time taken by user to compare different product, in my website 
+	user don't really have to open the product to see its description he only has to hover over the product which
+	he finds interesting and you would be able to see its description and choose your product which suits you best. 

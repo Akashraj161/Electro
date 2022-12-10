@@ -1,0 +1,723 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #413F42;
+    color: #fff;
+    
+    
+}
+
+.companyName{
+    color: #F15412;
+}
+
+
+form{
+    display: inline-block;
+    margin-left: 90px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 400px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.header{
+    background: radial-gradient(#EEEEEE , #576F72);
+}
+
+.container1{
+    display: flex;
+}
+
+.headingImg{
+   
+    padding-left: 0px;
+}
+
+.moto{
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 60px;
+    margin-right: 100px;
+    color: white;
+    
+}
+
+.moto-heading{
+    
+    text-shadow: 2px 4px 2px #413F42;
+    /* animation-name: div1;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-direction:normal; */
+
+}
+/* @keyframes div1 {
+    0% { top: 0px;  }
+    25% { top: 40px;}
+    50% {top: 50px; }
+    75% {top: 70px;}
+    100% {top: 80px; }
+    
+} */
+
+.motoButton{
+    padding: 10px;
+    margin: 40px;
+    border-radius: 10px;
+    background-color: #F15412;
+    color: white;
+    transition: transform .2s;
+    box-shadow: 2px 4px 7px #413F42;
+}
+
+.motoButton:hover{
+    transform: scale(1.2);
+}
+
+.categoriesHeading{
+    text-align: center;
+    margin-top: 20px;
+    color:#413F42;
+    font-weight: 900;
+}
+
+.categoriesHeading:after {
+    content: '';
+    background: red;
+    display: block;
+    height: 7px;
+    position: absolute;
+    left: 37%;
+    bottom: -5px;
+    width: 0%;
+    opacity: 0.7;
+    transition: all .5s;
+  }
+  .categoriesHeading:hover:after {
+    position: absolute;
+    width: 26%;
+    margin-left: 0%;
+  }
+
+.categories{
+    display: flex;
+}
+
+
+.categoriesImg{
+    background: repeating-linear-gradient( #F9F9F9, #ADDDD0 , #F9F9F9 50%);
+    border: 1px solid #ADDDD0 ;
+    margin: 80px 50px;
+    height: 350px;
+    width: 350px;
+    transform: scale(1);
+    transition: transform ease-in 300ms
+}
+
+.laptop:hover::after{
+    content: "LAPTOP";
+    position: relative;
+    top: 0px;
+    left: 33%;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px rgb(104, 104, 180);
+
+}
+.mobile:hover::after{
+    content: "MOBILE";
+    position: relative;
+    top: -15px;
+    left: 33%;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px rgb(104, 104, 180);
+
+}
+.watch:hover::after{
+    content: "WATCH";
+    position: relative;
+    top: -15px;
+    left: 33%;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px rgb(104, 104, 180);
+
+}
+
+.laptop img{
+    padding: 30px 25px;
+}
+
+.mobile img{
+   padding: 30px 115px;
+}
+.watch img{
+    padding: 30px 50px;
+}
+.Imagedesc{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    top: 275px;
+    left: 100px;
+    opacity: 0;
+}
+
+.categoriesImg:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+    opacity: 0.5;
+    
+}
+
+/* Featured  section style */
+
+.container3{
+    background: radial-gradient(#EEEEEE , #576F72);
+    height: 2000px;
+}
+.FeaturedItems{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top: 100px;
+    
+}
+.productHeading{
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+}
+.productHeading::after{
+    content: "";
+    position: absolute;
+    transform: scale(0);
+    left: 39%;
+    top: 80px;
+    height: 3px;
+    width: 22%;
+    background-color: red;
+    transition: transform 0.3s ease-out;
+}
+
+.productHeading:hover::after{
+    transform: scale(1);
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transition-delay: 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    border: 1px solid #576F72;
+    transform: rotateY(180deg);
+  }
+
+  .specslink{
+    color: rgb(1, 14, 31);
+  }
+
+ .moreButton{
+    padding: 10px;
+    position: absolute;
+    left: 45%;
+    margin: 40px;
+    border-radius: 10px;
+    background-color: #F15412;
+    color: white;
+    transition: transform .2s;
+ }
+
+ .moreButton:hover{
+    transform: scale(1.2);
+ }
+
+ .cartbutton{
+    margin-top: 10px;
+ }
+ 
+.FeaturedItems div{
+    width: 300px;
+    height: 400px;
+   
+}
+.one img{
+    position: relative;
+    right: 25px;
+}
+.two img{
+    position: relative;
+    right: 25px;
+}
+.three img{
+    position: relative;
+    top: 40px;
+    left: 15px;
+}
+
+.four img{
+    position: relative;
+    top: 30px;
+}
+
+.Mcaption1{
+    position: relative;
+    bottom: 10px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+.Mcaption2{
+    position: relative;
+    top: 70px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+.Mcaption3{
+    position: relative;
+    top: 40px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+
+.specs{
+    left: 20px;
+}
+
+.Lone img{
+    position: relative;
+    right: 10px;
+}
+.Ltwo img{
+    position: relative;
+    top: 60px;
+}
+.Lthree img{
+    position: relative;
+    top: 20px;
+}
+.Lfour img{
+    position: relative;
+    left:2px;
+    
+}
+
+.Lcaption1{
+    position: relative;
+    top: 20px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+.Lcaption2{
+    position: relative;
+    top: 130px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+.Lcaption3{
+    position: relative;
+    top: 40px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+.Lcaption4{
+    position: relative;
+    top: 40px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+
+
+.Wone img{
+    position: relative;
+    top: 50px;
+}
+.Wtwo img{
+    position: relative;
+    top: 50px;
+}
+.Wthree img{
+    position: relative;
+    top: 50px;
+    
+}
+.Wfour img{
+    position: relative;
+    top: 50px;
+}
+
+.Wcaption1{
+    position: relative;
+    top: 130px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+.Wcaption2{
+    position: relative;
+    top: 130px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+
+.Wcaption3{
+    position: relative;
+    top: 120px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+
+.Wcaption4{
+    position: relative;
+    top: 130px;
+    text-shadow: 2px 2px 5px #413F42;
+}
+
+
+/* container 4 */
+
+.container4{
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    animation-name: forthback;
+    background-color: #bbb;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 8s;
+}
+
+@keyframes forthback {
+    0% { background-color: #EEEEEE;  }
+    25% {background-color: #bbb; }
+    50% { background-color: lightpink; }
+    75% {background-color: #bbb; }
+    100% { background-color: #EEEEEE;}
+    
+}
+
+.navratri-heading{
+    position: relative;
+    left: 40%;
+    padding: 40px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navratri-heading::after{
+    content: "";
+    position: absolute;
+    transform: scale(0);
+    left: 0%;
+    top: 90px;
+    height: 3px;
+    width: 100%;
+    background-color: red;
+    transition: transform 0.3s ease-out;
+}
+
+.navratri-heading:hover::after{
+    transform: scale(1);
+}
+
+
+
+.navratriOffer{
+    position: absolute;
+    padding-top: 150px;
+    left: 150px;
+    
+    transform: rotate(0deg);
+    transform: scale(1);
+    animation-name: first;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes first {
+    0% { transform: rotate(0deg) scale(1); }
+    25% { transform: rotate(25deg) scale(1.1);}
+    50% { transform: rotate(0deg) scale(1);}
+    75% { transform: rotate(-25deg) scale(1.1);}
+    100% { transform: rotate(0deg) scale(1);}
+    
+}
+
+.newlaunch{
+    position: absolute;
+    margin-top: 150px;
+    right: 100px;
+    background:url(/images/celgif.gif);
+}
+.lauchtitle{
+    
+    font-size: 25px;
+    font-weight: bolder;
+    color: #2980b9;
+    text-shadow: 2px 2px 4px red;
+    animation-name: second;
+    transform: scale(1);
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes second {
+    0% { transform:  scale(1); }
+    17% { transform:  scale(1.1);}
+    34% { transform:  scale(1);}
+    51% { transform:  scale(1.1);}
+    68% { transform: scale(1);}
+    85% { transform: scale(1.1);}
+    100% { transform: scale(1);}
+    
+}
+
+.notifyme{
+    position: absolute;
+    right: 80px;
+   
+}
+.notify{
+    width: 100px;
+}
+
+
+
+/* Sign In Form Style */
+
+.signInForm{
+    position: absolute;
+    left: 30%;
+    border: 2px solid #282829;
+    height: 500px;
+    width: 300px;
+    background-color: #413F42;
+    color: #fff;
+}
+.signInPage{
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+        padding: 50px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        text-align: center;
+        transform: scale(0,0);
+        transition: transform ease-in 300ms ;
+      
+}
+
+
+.signInPage:target{
+    transform: scale(1,1);
+    z-index: 2;
+}
+
+.formTitle{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+
+.cancelbutton{
+    text-decoration: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: #413F42;
+    color: #F9F9F9;
+    border: 2px solid #fff;
+    border-radius: 50%;
+
+}
+
+.button{
+    width: 60px;
+    height: 30px;
+    border-radius:8px;
+    background-color: #F15412;
+    box-shadow: 3px 3px 3px #b95933;
+    color: white;
+    transition: transform .2s;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+
+.signInForm a{
+    color: #fff;
+}
+
+
+
+/* check mark light box effect */
+
+.checkMark{
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    padding-left: 500px;
+    padding-top: 200px;
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(0,0);
+    transition: transform ease-in 300ms ;
+   
+}
+
+.checkMark:target{
+    transform: scale(1,1);
+    display: block;
+}
+
+.forgetpass{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    transform: scale(0,0);
+    transition: transform ease-in 300ms ;
+    
+}
+
+.forgetpass form{
+    position: absolute;
+    left: 30%;
+    width: 300px;
+    height: 500px;
+    border: 2px solid #282829;
+    background-color: #413F42;
+}
+
+.forgetpass:target{
+    transform: scale(1,1);
+    display: block;
+}
+
+.cancelbutton2{
+    text-decoration: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: #413F42;
+    color: #F9F9F9;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+
+ 
+
+
+
+/* 
+footer */
+
+footer{
+    background: rgb(19,25,33);
+    color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 78.7vw;
+    position: relative; 
+    padding: 40px 10vw; 
+    padding-bottom: 40px; 
+    
+}
+
+.contact-container{
+    display: flex; 
+    width: 80%; 
+    justify-content: space-between;
+}
+
+.contact-items{
+    width: 55%; 
+    display: flex; 
+    /* justify-content: space-between; */
+    float:right;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.foottitle{
+    color: #576F72;
+    font-weight: bolder;
+}
+
+
+
+/* top button */
+
+ .top-button{
+    width: 100px;
+    height: 50px;
+    color: #F15412;
+    background: rgba(19,25,33,0.9);
+    
+} 
